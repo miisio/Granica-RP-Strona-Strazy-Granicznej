@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Straż Graniczna RP - Ochrona Granicy</title>
+    <style>
+        /* Ogólny styl */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #005ea5;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 3px solid #003d73;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 5px 0 0;
+        }
+
+        nav {
+            background-color: #003d73;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 50px 20px;
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .container {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #005ea5;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            font-size: 2em;
+            margin-top: 0;
+        }
+
+        .card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .card ul li {
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        footer {
+            background-color: #003d73;
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            background-color: #005ea5;
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background-color: #003d73;
+        }
+
+        /* Animacje */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Straż Graniczna RP</h1>
+    <p>Ochrona Granicy Polsko-Białoruskiej i bezpieczeństwo Państwa</p>
+</header>
+
+<nav>
+    <a href="javascript:void(0);" onclick="changeSection('home')">Strona Główna</a>
+    <a href="javascript:void(0);" onclick="changeSection('misje')">Misje</a>
+    <a href="javascript:void(0);" onclick="changeSection('czlonkowie')">Członkowie</a>
+    <a href="javascript:void(0);" onclick="changeSection('rekrutacja')">Rekrutacja</a>
+    <a href="javascript:void(0);" onclick="changeSection('turyści')">Informacje dla Turystów</a>
+    <a href="javascript:void(0);" onclick="changeSection('kontakt')">Kontakt</a>
+</nav>
+
+<section id="home" class="active fade-in">
+    <div class="container">
+        <h2>Witamy na stronie Straży Granicznej RP</h2>
+        <p>Straż Graniczna RP jest kluczową instytucją odpowiedzialną za zapewnienie bezpieczeństwa na granicy Polski, w tym granicy polsko-białoruskiej. Działa w zgodzie z prawem międzynarodowym i krajowym, dbając o integralność terytorialną Państwa.</p>
+        <p>Naszym głównym celem jest kontrola ruchu granicznego, zapobieganie nielegalnym próbom przekroczenia granicy, przeciwdziałanie przestępczości transgranicznej oraz wspieranie innych służb w sytuacjach kryzysowych.</p>
+    </div>
+</section>
+
+<section id="misje" class="fade-in">
+    <div class="container">
+        <h2>Misje Straży Granicznej</h2>
+        <div class="card">
+            <h3>Patrolowanie granicy</h3>
+            <p>Regularne patrole graniczne, zarówno piesze, jak i zmotoryzowane, mają na celu monitorowanie sytuacji na granicy i wykrywanie nielegalnych prób przekroczenia granicy.</p>
+        </div>
+        <div class="card">
+            <h3>Kontrola ruchu granicznego</h3>
+            <p>Kontrolujemy wszystkie osoby i towary przekraczające granicę, zapewniając zgodność z obowiązującymi przepisami.</p>
+        </div>
+        <div class="card">
+            <h3>Reagowanie na kryzysy</h3>
+            <p>W przypadku kryzysów humanitarnych, migracji czy przestępczości, podejmujemy działania mające na celu utrzymanie porządku i ochronę granic.</p>
+        </div>
+    </div>
+</section>
+
+<section id="czlonkowie" class="fade-in">
+    <div class="container">
+        <h2>Członkowie Straży Granicznej</h2>
+        <div class="card">
+            <h3>Hierarchia i struktura</h3>
+            <ul>
+                <li><strong>Komendant Straży Granicznej:</strong> ppłk SG Leonard Bielik</li>
+                <li><strong>Zastępca Komendanta Straży Granicznej:</strong> kpt. SG Cezary Wieczorek</li>
+                <li><strong>Rzecznik Prasowy Straży Granicznej:</strong> kpr. SG Cezary Poranek</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="rekrutacja" class="fade-in">
+    <div class="container">
+        <h2>Rekrutacja</h2>
+        <p>Chcesz dołączyć do Straży Granicznej i współtworzyć bezpieczną granicę Państwa? Proces rekrutacji odbywa się z dbałością o wyłonienie najlepszych kandydatów.</p>
+        <a href="https://forms.gle/68zMFkCQjPkjKsfG8" class="btn">Aplikuj teraz</a>
+    </div>
+</section>
+
+<section id="turyści" class="fade-in">
+    <div class="container">
+        <h2>Informacje dla Turystów</h2>
+        <p>Przekraczając granicę Unii Europejskiej, warto zapoznać się z zasadami dotyczącymi dozwolonych limitów towarów oraz przepisów celnych. Poniżej znajdziesz najważniejsze informacje, które pomogą Ci w bezpiecznym i zgodnym z prawem wwożeniu rzeczy na teren Polski oraz UE.</p>
+
+        <div class="card">
+            <h3>Dozwolone Limity Towarów</h3>
+            <ul>
+                <li><strong>Alkohol:</strong> do 10 litrów mocnych napojów (powyżej 22% alkoholu), 20 litrów wina musującego, 90 litrów wina i 110 litrów piwa.</li>
+                <li><strong>Tytoń:</strong> do 800 papierosów, 400 cygar, 1 kg tytoniu do palenia.</li>
+                <li><strong>Produkty spożywcze:</strong> do użytku osobistego, nie komercyjnego.</li>
+                <li><strong>Produkty roślinne i zwierzęce:</strong> obowiązują szczegółowe przepisy celne.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Wymogi Przemieszczania Towarów</h3>
+            <ul>
+                <li>Towary o wartości powyżej 300 EUR muszą być zgłoszone w służbach celnych.</li>
+                <li>Wwóz broni wymaga odpowiednich zezwoleń.</li>
+                <li>Leki w dużych ilościach muszą być zgłoszone.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Zakazy i Ograniczenia</h3>
+            <ul>
+                <li>Zakaz wwozu narkotyków i substancji psychoaktywnych.</li>
+                <li>Zakaz wwozu produktów niebezpiecznych dla zdrowia publicznego.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="kontakt" class="fade-in">
+    <div class="container">
+        <h2>Kontakt</h2>
+        <p>Adres: ul. Graniczna 1, 16-113 Boreczko</p>
+        <p>Discord: @kaczkqv2 - Dyżurny </p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Straż Graniczna RP. Wszelkie prawa zastrzeżone.</p>
+    <p style="font-size: 0.8em; color: #888; margin-top: 10px;">Strona zrobiona na potrzeby gry Granica RP przez nezxco_.</p>
+</footer>
+
+<script>
+    function changeSection(sectionId) {
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.remove('active');
+        });
+        document.getElementById(sectionId).classList.add('active');
+    }
+</script>
+
+</body>
+</html>
